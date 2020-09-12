@@ -23,4 +23,4 @@ This command will run a console app in a container that you can access in your w
 
 ## License
 
-[Apache License 2.0](/blob/master/LICENSE)
+[Apache License 2.0](/LICENSE)
