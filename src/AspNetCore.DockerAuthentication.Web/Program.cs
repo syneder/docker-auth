@@ -1,4 +1,5 @@
 using Microsoft.AspNetCore.Hosting;
+using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Hosting;
 
 namespace AspNetCore.DockerAuthentication.Web
@@ -20,6 +21,10 @@ namespace AspNetCore.DockerAuthentication.Web
             return Host.CreateDefaultBuilder(args).ConfigureWebHostDefaults(webBuilder =>
             {
                 webBuilder.UseStartup<Startup>();
+                webBuilder.ConfigureAppConfiguration(configurationBuilder =>
+                {
+                    configurationBuilder.AddEnvironmentVariables("DOCKER_AUTH_");
+                });
             });
         }
     }
