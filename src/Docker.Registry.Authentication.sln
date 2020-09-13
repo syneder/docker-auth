@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30503.244
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AspNetCore.DockerAuthentication.Web", "AspNetCore.DockerAuthentication.Web\AspNetCore.DockerAuthentication.Web.csproj", "{0C8E0BF5-5C4D-4599-894D-FE0CEC7BA83F}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Docker.Registry.Authentication.Web", "Docker.Registry.Authentication.Web\Docker.Registry.Authentication.Web.csproj", "{0C8E0BF5-5C4D-4599-894D-FE0CEC7BA83F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
