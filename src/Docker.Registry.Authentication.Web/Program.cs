@@ -2,7 +2,7 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Hosting;
 
-namespace AspNetCore.DockerAuthentication.Web
+namespace Docker.Registry.Authentication.Web
 {
     public class Program
     {

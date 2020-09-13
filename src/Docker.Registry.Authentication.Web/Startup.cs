@@ -1,3 +1,4 @@
+using Docker.Registry.Authentication.Web.Internal;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
@@ -6,7 +7,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using System;
 
-namespace AspNetCore.DockerAuthentication.Web
+namespace Docker.Registry.Authentication.Web
 {
     /// <summary>
     /// This class configures services and the app's request pipeline.
@@ -19,6 +20,7 @@ namespace AspNetCore.DockerAuthentication.Web
         /// <param name="services">A collection of service descriptors.</param>
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddAuthentication(BasicAuthenticationDefaults.AuthenticationScheme).AddBasic();
         }
 
         /// <summary>
@@ -32,11 +34,17 @@ namespace AspNetCore.DockerAuthentication.Web
             }
 
             app.UseRouting();
+            app.UseAuthentication();
+
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapGet("/", async context =>
                 {
                     Console.WriteLine(context.Request.GetEncodedUrl());
+                    Console.WriteLine("Remote IP: " + context.Connection.RemoteIpAddress);
+                    Console.WriteLine("User is authenticated: " + context.User.Identity.IsAuthenticated);
+                    Console.WriteLine("User name: " + context.User.Identity.Name);
+
                     await context.Response.WriteAsync("Hello World!");
                 });
             });
