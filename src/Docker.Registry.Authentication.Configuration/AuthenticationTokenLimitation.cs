@@ -1,4 +1,4 @@
-﻿namespace Docker.Registry.Authentication.Configuration.Runtime.Models
+﻿namespace Docker.Registry.Authentication.Configuration
 {
     /// <summary>
     /// Represents the limits of issued tokens in the authentication system.

@@ -1,6 +1,6 @@
 ﻿using System.Security.Cryptography.X509Certificates;
 
-namespace Docker.Registry.Authentication.Configuration.Runtime.Models
+namespace Docker.Registry.Authentication.Configuration
 {
     /// <summary>
     /// Represents parameters that can be used to configure the limits of issued tokens in the authentication system.
