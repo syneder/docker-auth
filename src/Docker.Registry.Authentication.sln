@@ -5,7 +5,7 @@ VisualStudioVersion = 16.0.30503.244
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Docker.Registry.Authentication.Web", "Docker.Registry.Authentication.Web\Docker.Registry.Authentication.Web.csproj", "{0C8E0BF5-5C4D-4599-894D-FE0CEC7BA83F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Docker.Registry.Authentication.Configuration", "Docker.Registry.Authentication.Configuration\Docker.Registry.Authentication.Configuration.csproj", "{E95BBC42-B79F-47C3-B08E-E6F4A809B7D4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Docker.Registry.Authentication.Core", "Docker.Registry.Authentication.Core\Docker.Registry.Authentication.Core.csproj", "{E95BBC42-B79F-47C3-B08E-E6F4A809B7D4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
