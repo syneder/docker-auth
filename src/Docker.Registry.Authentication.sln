@@ -7,6 +7,10 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Docker.Registry.Authenticat
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Docker.Registry.Authentication.Core", "Docker.Registry.Authentication.Core\Docker.Registry.Authentication.Core.csproj", "{E95BBC42-B79F-47C3-B08E-E6F4A809B7D4}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Docker.Registry.Authentication.DataLayer", "Docker.Registry.Authentication.DataLayer\Docker.Registry.Authentication.DataLayer.csproj", "{F86C03D3-359B-4DB7-8B41-9C282A0B603C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Docker.Registry.Authentication.DataLayer.Models", "Docker.Registry.Authentication.DataLayer.Models\Docker.Registry.Authentication.DataLayer.Models.csproj", "{80447402-34CE-48B9-99CE-B2D7FAFE3E75}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +25,14 @@ Global
 		{E95BBC42-B79F-47C3-B08E-E6F4A809B7D4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E95BBC42-B79F-47C3-B08E-E6F4A809B7D4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E95BBC42-B79F-47C3-B08E-E6F4A809B7D4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F86C03D3-359B-4DB7-8B41-9C282A0B603C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F86C03D3-359B-4DB7-8B41-9C282A0B603C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F86C03D3-359B-4DB7-8B41-9C282A0B603C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F86C03D3-359B-4DB7-8B41-9C282A0B603C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{80447402-34CE-48B9-99CE-B2D7FAFE3E75}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{80447402-34CE-48B9-99CE-B2D7FAFE3E75}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{80447402-34CE-48B9-99CE-B2D7FAFE3E75}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{80447402-34CE-48B9-99CE-B2D7FAFE3E75}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
